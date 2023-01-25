@@ -32,6 +32,8 @@ html::-webkit-scrollbar-thumb{
     background: #333;
     border-radius: 5rem;
 }
+
+/* кнопка содержимого корзины*/
 .btn{
     display: inline-block;
     margin: 1rem 0;
@@ -84,11 +86,15 @@ header .navbar a{
     font-size: 2rem;
     color: var(--mincolor);
 }
+
+/* наведение и линия подчеркивания под ссылками навигации */
 header .navbar a:hover{
     color: var(--sc-color);
     border-bottom: 0.1rem solid var(--sc-color);
     padding-bottom: 0.5rem;
 }
+
+/* группа иконок, div указываем для отступов (поведение элемента выбрал методом тыка) */
 header .icons div{
     color: var(--mincolor);
     cursor: pointer;
@@ -114,6 +120,9 @@ header .search-form{
     transform-origin: top;
 
 }
+
+/* выпадание формы поиска при нажатии основного поиска,
+плюс transform-origin: top; */
 header .search-form.active{
     transform: scaleY(1);
 }
@@ -132,6 +141,8 @@ header .search-form label{
 header .search-form label:hover{
     color: var(--sc-color);
 }
+
+/* выпадающее содержимое корзины */
 header .items{
     position: absolute;
     top: 110%;
